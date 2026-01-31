@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile - CUI Vehari</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-container">
+    <div class="logo-section">
+      <img src="download.jpg" alt="CUI Logo" class="logo">
+      <h1 class="university-name">CUI Vehari</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="profile.html" class="active">Profile</a>
+      <a href="registration.html">Admissions</a>
+      <span id="dateDisplay"></span>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <img src="abdulahad.jpg" alt="Profile Picture" class="profile-image" id="profile-img-display"
+        onerror="this.src='https://via.placeholder.com/150'">
+      <h2 class="name" id="display-header-name">Abdulahad Warraich</h2>
+      <p class="profile-title" id="display-header-role">Professional Web Developer</p>
+    </div>
+
+    <!-- Info Table -->
+    <table class="info-table">
+      <tr>
+        <th>Field</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td id="display-name">Abdulahad Warraich</td>
+      </tr>
+      <tr>
+        <td>Roll No</td>
+        <td id="display-roll">FA23-BCS-046</td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td id="display-dept">Computer Science</td>
+      </tr>
+      <tr>
+        <td>Semester</td>
+        <td id="display-sem">5th</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td id="display-email">abdulahad.web9@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Contact</td>
+        <td id="display-phone">+92 3000479696</td>
+      </tr>
+    </table>
+
+    <div class="action-container">
+      <button class="btn-edit" onclick="openEditModal()">
+        <i class="fas fa-edit"></i> Edit Profile
+      </button>
+    </div>
+  </main>
+
+  <!-- Edit Modal -->
+  <div class="modal-overlay" id="editModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Update Profile</h3>
+        <button class="btn-close" onclick="closeEditModal()">&times;</button>
+      </div>
+      <form id="editForm" onsubmit="saveProfile(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="input-name" required>
+        </div>
+        <div class="form-group">
+          <label>Role / Title</label>
+          <input type="text" id="input-role" required>
+        </div>
+        <div class="form-group">
+          <label>Roll No</label>
+          <input type="text" id="input-roll">
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <input type="text" id="input-dept">
+        </div>
+        <div class="form-group">
+          <label>Semester</label>
+          <input type="text" id="input-sem">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="input-email">
+        </div>
+        <div class="form-group">
+          <label>Contact Number</label>
+          <input type="text" id="input-phone">
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn-cta">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <p>&copy; 2026 COMSATS University Islamabad, Vehari Campus. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

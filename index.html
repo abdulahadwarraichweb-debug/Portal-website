@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMSATS University Islamabad - Vehari Campus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header-container">
+    <div class="logo-section">
+      <img src="download.jpg" alt="CUI Logo" class="logo">
+      <h1 class="university-name">CUI Vehari</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="registration.html">Admissions</a>
+      <span id="dateDisplay"></span>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-wrapper">
+    <div class="campus-image">
+      <img src="portal-image.jpg" alt="COMSATS Vehari Campus">
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>COMSATS University Islamabad<br>Vehari Campus</h1>
+        <p>Envisioning a truly national character and excellence in education.</p>
+        <a href="#vision" class="btn-cta">Discover More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content: Vision & Achievements -->
+  <main class="main-content" id="vision">
+    <h2 class="section-title">Our Vision</h2>
+    <p style="text-align: center; max-width: 900px; margin: 0 auto 4rem auto; font-size: 1.1rem; color: #555;">
+      "The COMSATS University Vehari envisions assuming a truly national character for itself in the years to come.
+      It envisions having presence in all provinces of the country. It sees for itself a position among the top five
+      universities in the country; among top 100 universities in the developing countries..."
+    </p>
+
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <h3><i class="fas fa-graduation-cap" style="color: #D4AF37; margin-right: 10px;"></i> Academic Excellence</h3>
+        <p>Recognized by HEC for quality education and a student-centered learning environment that fosters critical
+          thinking.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-flask" style="color: #D4AF37; margin-right: 10px;"></i> Research & Innovation</h3>
+        <p>Faculty and students working side-by-side on research that solves real-world problems and advances
+          technology.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-network-wired" style="color: #D4AF37; margin-right: 10px;"></i> Digital Campus</h3>
+        <p>Modern labs, digital classrooms, and high-speed connectivity to support a future-focused learning journey.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-handshake" style="color: #D4AF37; margin-right: 10px;"></i> Industry Partners</h3>
+        <p>Strong linkages with industry leaders providing students with internships, workshops, and career
+          opportunities.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-trophy" style="color: #D4AF37; margin-right: 10px;"></i> Student Success</h3>
+        <p>Our students consistently win national competitions, launch startups, and secure scholarships worldwide.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-globe-asia" style="color: #D4AF37; margin-right: 10px;"></i> Social Impact</h3>
+        <p>Committed to community service, environmental sustainability, and social responsibility initiatives.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Video Section -->
+  <section class="video-section-wrapper">
+    <h2>Experience CUI Vehari</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Societies Section -->
+  <section class="society-section">
+    <h2 class="section-title">Student Life</h2>
+    <div class="society-grid">
+      <div class="society-card">
+        <h3><i class="fas fa-laptop-code"></i> Computer Society</h3>
+        <p>Coding horizons, one line at a time.</p>
+      </div>
+
+      <div class="society-card">
+        <h3><i class="fas fa-futbol"></i> Sports Society</h3>
+        <p>Champions in the making, on and off the field.</p>
+      </div>
+
+      <div class="society-card">
+        <h3><i class="fas fa-camera"></i> Media Society</h3>
+        <p>Capturing moments, telling stories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <p>&copy; 2026 COMSATS University Islamabad, Vehari Campus. All rights reserved.</p>
+    <div style="margin-top: 10px; font-size: 0.8rem;">
+      <a href="#" style="color: #D4AF37; margin: 0 10px;">Contact Us</a> |
+      <a href="#" style="color: #D4AF37; margin: 0 10px;">Admissions</a> |
+      <a href="#" style="color: #D4AF37; margin: 0 10px;">Portal</a>
+    </div>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+      document.getElementById('dateDisplay').textContent = now.toLocaleDateString('en-US', options);
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+</body>
+
+</html>
